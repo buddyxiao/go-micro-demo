@@ -1,0 +1,18 @@
+
+database:
+  dsn: root:123456@tcp(localhost:3306)/oceanmicro?charset=utf8mb4&parseTime=true&loc=Local
+  db: "mysql"
+  tables: "user"
+  outPath:  "./user-service/dao/query"
+  # query code file name, default: gen.go
+  outFile:  ""
+  # generate unit test for query code
+  withUnitTest: false
+  # generated domain code's package name
+  modelPkgName: ""
+  # generate with pointer when field is nullable
+  fieldNullable: false
+  # generate field with gorm index tag
+  fieldWithIndexTag: false
+  # generate field with gorm column type tag
+  fieldWithTypeTag: false

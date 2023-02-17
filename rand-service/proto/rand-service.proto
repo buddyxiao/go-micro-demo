@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package rand;
+
+option go_package = "./proto;rand";
+
+message RandRequest{
+	int64 max=1;
+}
+
+message RandResponse {
+	int64 result=1;
+}
+
+service Rand {
+	rpc GetRand (RandRequest) returns (RandResponse);
+}

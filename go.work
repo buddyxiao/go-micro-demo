@@ -1,0 +1,9 @@
+go 1.18
+
+use (
+	./common
+	./gin-api-gateway
+	./rand-service
+	./user-service
+	./log-service
+)

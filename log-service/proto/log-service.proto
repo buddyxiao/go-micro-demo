@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package logservice;
+
+option go_package = "./proto;logservice";
+
+
+message LogRequest {
+  string msg=1;
+}
+
